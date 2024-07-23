@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+main {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  padding: 25px;
+  border-radius: 10px;
+}
+section header {
+  margin-top: 10px;
+}
+section header img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -12px;
+}
+section .text {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 15px;
+}
+section .text h2 {
+  font-size: 13px;
+}
+section .text h3 {
+  opacity: 50%;
+  font-size: 10px;
+}
+section .description p:first-child {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+section .description p:last-child {
+  font-weight: 500;
+  opacity: 70%;
+  height: 100%;
+  line-height: 1.6;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 80%;
+  margin: 50px auto;
+}
+@media (min-width: 767px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .daniel {
+    grid-column: 1/3;
+  }
+  .jonathan {
+    grid-column: 3;
+  }
+  .kira {
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+  .jeanette {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  .patrick {
+    grid-column: 2/4;
+  }
+  main{
+    height: 100vh;
+  }
+}
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+  position: relative;
+}
+section .description p:first-child:not(.kira .description p:first-child,.jeanette .description p:first-child){
+  color: white;
+}
+.daniel .qoute {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.daniel .qoute img {
+  border: none;
+}
+.daniel .description {
+  position: relative;
+}
+.daniel img,
+.patrick img {
+  border: 1px solid hsl(263, 62%, 65%);
+}
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+}
+.jeanette {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
